@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Página Personal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>¡Hola, soy <span id="nombre"></span>!</h1>
+    <p class="sub">Bienvenido a mi página personal</p>
+    <div class="actions">
+      <button class="btn" onclick="cambiarMensaje()">Cambiar mensaje</button>
+      <button class="btn ghost" id="temaBtn" onclick="toggleTema()" aria-pressed="false">Modo oscuro</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Sobre mí</h2>
+      <p id="mensaje">Cargando...</p>
+    </section>
+
+    <section>
+      <h2>Habilidades</h2>
+      <ul class="tags" id="listaHabilidades"></ul>
+    </section>
+
+    <section>
+      <h2>Contacto</h2>
+      <p>Escríbeme a <a id="correo" href="#">cargando...</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="anio"></span> <span id="nombre2"></span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
